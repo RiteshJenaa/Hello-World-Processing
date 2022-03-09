@@ -9,8 +9,10 @@ String ten;
 String h;
 String one;
 int two;
+int skipCount=2;
 //
-void setup() {
+void setup() 
+{
   String secondSentence = "Mr. Mercer counts to 10, by 1."; //Local Variables
   //println(secondSentence);
   //Populations, Declaration, Valuing
@@ -20,7 +22,7 @@ void setup() {
   e = "Mercer";
   f = "counts";
   g = "to";
-  ten = "10";
+  ten = "10000";
   h = "by";
   one = "1";
   two = 1;
@@ -28,7 +30,9 @@ void setup() {
   println("One plus two is", int(one)+two); //Casting is int(one), to change STRING to INTEGER
 }//End setup
 //
-void draw() {
+void draw() 
+{
+  two+=skipCount; // two+1, two++
   println(d+z, e, f, g, ten+y, h, str(two)+z);
 }//End draw
 //
